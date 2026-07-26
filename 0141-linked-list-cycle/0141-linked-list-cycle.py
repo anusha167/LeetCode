@@ -10,18 +10,12 @@ class Solution(object):
         :type head: ListNode
         :rtype: bool
         """
-
-        # if slow and fast pointers point to the same node again, a cycle must exist
-
-        # initialize pointers
-        slow = head
-        fast = head
-        
-        while slow and fast and fast.next is not None:
-
-            slow = slow.next # pointer moves one step
-            fast = fast.next.next # pointer moves two steps
-
-            if slow == fast: # if slow and fast point to same node
+        traversed = []
+        curr = head
+        while curr:
+            if curr not in traversed:
+                traversed.append(curr)
+                curr = curr.next
+            else:
                 return True
         return False
