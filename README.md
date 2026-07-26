@@ -13,6 +13,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Two Pointers
 |  |
 | ------- |
+| [0015-3sum](https://github.com/anusha167/LeetCode/tree/master/0015-3sum) |
 | [0141-linked-list-cycle](https://github.com/anusha167/LeetCode/tree/master/0141-linked-list-cycle) |
 | [0160-intersection-of-two-linked-lists](https://github.com/anusha167/LeetCode/tree/master/0160-intersection-of-two-linked-lists) |
 | [0234-palindrome-linked-list](https://github.com/anusha167/LeetCode/tree/master/0234-palindrome-linked-list) |
@@ -35,6 +36,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [0015-3sum](https://github.com/anusha167/LeetCode/tree/master/0015-3sum) |
 | [0704-binary-search](https://github.com/anusha167/LeetCode/tree/master/0704-binary-search) |
 | [1929-concatenation-of-array](https://github.com/anusha167/LeetCode/tree/master/1929-concatenation-of-array) |
 ## Simulation
@@ -50,4 +52,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0278-first-bad-version](https://github.com/anusha167/LeetCode/tree/master/0278-first-bad-version) |
+## Sorting
+|  |
+| ------- |
+| [0015-3sum](https://github.com/anusha167/LeetCode/tree/master/0015-3sum) |
 <!---LeetCode Topics End-->
