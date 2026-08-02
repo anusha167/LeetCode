@@ -5,17 +5,13 @@ class Solution(object):
         :type target: int
         :rtype: List[int]
         """
-        """
-        pseudocode
-        Time complexity: O(n^2) problem
-        Data Structure: HashMap
-        Keep numbers as keys and index numbers as values
-        """
+        numMap = {}
+        n = len(nums)
 
-        pair_idx = {} # initialize dictionary
+        for i in range(n):
+            complement = target - nums[i]
+            if complement in numMap:
+                return [numMap[complement], i]
+            numMap[nums[i]] = i
 
-        for i, num in enumerate(nums): 
-            #enumerate() iterates through nums list along with their indices
-            if target - num in pair_idx:
-                return [i, pair_idx[target-num]]
-            pair_idx[num]=i
+        return []  # No solution found
