@@ -5,13 +5,18 @@ class Solution(object):
         :type target: int
         :rtype: List[int]
         """
-        numMap = {}
-        n = len(nums)
+       
+       # Using HashMap one pass method
 
-        for i in range(n):
-            complement = target - nums[i]
-            if complement in numMap:
-                return [numMap[complement], i]
-            numMap[nums[i]] = i
+        hashmap = {} # val : index
 
-        return []  # No solution found
+        for i, n in enumerate(nums): # enumerate() adds an automatic counter which allows you to track both the index and the value simultaneously
+            complement = target - n
+            if complement in hashmap:
+                return [i, hashmap[complement]]
+        
+            # if the complement doesn't exist in the hashmap, we add that value to the hashmap
+            hashmap[n] = i
+    
+        #return an empty list if no solution exists
+        return[]
