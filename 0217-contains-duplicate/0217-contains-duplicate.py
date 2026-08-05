@@ -4,9 +4,10 @@ class Solution(object):
         :type nums: List[int]
         :rtype: bool
         """
-        unique_nums = set(nums)
+        hashset = set()
 
-        if len(unique_nums) == len(nums):
-            return False
-        else:
-            return True
+        for n in nums:
+            if n in hashset:
+                return True
+            hashset.add(n)
+        return False
