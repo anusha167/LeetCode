@@ -7,10 +7,6 @@ class Solution(object):
         # nums = [3,0,1]
         n = len(nums) + 1
         range_nums = range(0,n)
-
-        for i in range_nums:
-            if i in nums:
-                continue
-            else:
-                return i
-        
+        sum_range = sum(range_nums)
+        req_num = sum_range - sum(nums)
+        return req_num
