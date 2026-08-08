@@ -4,18 +4,11 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[int]
         """
-        # Using In-place Marking method
-        for i in range(len(nums)):
-            index = abs(nums[i]) - 1
+        present = set(nums)
+        result = []
 
-            if nums[index] > 0:
-                nums[index] *= -1
+        for i in range(1, len(nums) + 1):
+            if i not in present:
+                result.append(i)
 
-        res = []
-
-        for i in range(len(nums)):
-            if nums[i] > 0:
-                res.append(i+1)
-        
-        return res
-
+        return result
